@@ -29,6 +29,7 @@ Le programme affiche ensuite le message chiffré.
 - Partez du principe que l'utilisateur n'est pas bête : vous n'avez pas besoin de valider les entrées utilisateur.
 - Vous pouvez créer autant de fichiers et de fonction que vous voulez
 - Votre code doit respecter les règles pep89
+- Vous pouvez utiliser d'autres librairies, tant que les algorithmes de chiffrement eux-mêmes sont codés par vous
 
 ## Bonus
 
