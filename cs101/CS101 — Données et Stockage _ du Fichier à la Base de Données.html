@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!-- saved from url=(0129)file:///Users/troglo/Documents/Modules/outputs/tous_les_cours_html/cs101_Donnees_et_Stockage_du_Fichier_a_la_Base_de_Donnees.html -->
+<html lang="fr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>cs101 — Données et Stockage : du Fichier à la Base de Données</title>
+  <link rel="stylesheet" href="./cs101 — Données et Stockage _ du Fichier à la Base de Données_files/fonts.css">
+  <style>
+    :root{--blue:#0056b3;--blue-soft:#e1ecf4;--green:#28a745;--green-soft:#d4edda;--orange:#f59f00;--orange-soft:#fff9db;--purple:#6f42c1;--purple-soft:#f3ebff;--ink:#2b2b2b;--muted:#666;--line:#e3e6ea}
+    *{box-sizing:border-box} body{max-width:950px;margin:20px auto;padding:0 15px;color:var(--ink);font-family:Lato,Arial,sans-serif;font-size:16px;line-height:1.6;background:#fff}
+    .card{background:#fff;border:1px solid var(--line);padding:25px;margin:0 0 25px;border-radius:4px;box-shadow:0 1px 3px rgba(0,0,0,.05)} .card.intro{background:#f8f9fa;border-left:5px solid var(--blue)}
+    .tag{display:inline-block;padding:3px 8px;border-radius:3px;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase}.tag.blue{color:var(--blue);background:var(--blue-soft)}.tag.green{color:var(--green);background:var(--green-soft)}.tag.purple{color:var(--purple);background:var(--purple-soft)}.tag.orange{color:#c35c00;background:#ffe6d5}
+    h1{margin:0 0 4px;font-size:30px;line-height:1.18;color:#111}h2{margin:10px 0 20px;font-size:24px;line-height:1.2;color:#111}h3{margin:22px 0 9px;font-size:16px;color:#111}p{margin:0 0 12px}.subtle{font-size:14px;color:var(--muted)}
+    table{width:100%;border-collapse:collapse;margin:0 0 16px;font-size:14px}th,td{padding:11px 10px;border-bottom:1px solid #e9ecef;text-align:left;vertical-align:top}thead th{background:var(--blue);color:#fff}tbody tr:last-child th,tbody tr:last-child td{border-bottom:0}.kv th{width:30%;padding-left:0;color:#444}.kv td{color:#111}.schedule th:nth-child(1){width:7%}.schedule th:nth-child(2){width:10%}.schedule th:nth-child(3){width:13%}.schedule th:nth-child(4){width:18%}.schedule th:nth-child(6){width:15%}.schedule td:nth-child(1),.schedule td:nth-child(2){text-align:center;font-weight:700}.schedule .fundamentals td:nth-child(3){background:#e7f1fb;font-weight:700}.schedule .project td:nth-child(3){background:#e4f5ec;font-weight:700}.schedule .assessment td:nth-child(3){background:#fff0e2;font-weight:700}
+    .metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:0 0 18px}.metric{padding:14px;border:1px solid #e9ecef;border-radius:4px;text-align:center;background:#fdfdfd}.metric span{display:block;font-size:12px;font-weight:700;color:#6c757d;text-transform:uppercase}.metric strong{display:block;margin-top:4px;color:#111;font-size:22px}.callout{margin:0 0 18px;padding:15px;border-left:4px solid var(--orange);border-radius:4px;background:var(--orange-soft);color:#555}.project-callout{margin:0 0 18px;padding:15px;border-left:4px solid var(--blue);border-radius:4px;background:#eaf2fa}.note{margin-top:15px;padding:12px 15px;border-radius:4px;background:#f8f9fa;color:#555;font-size:14px}.todo{color:#9b1c1c;background:#fde2e1;border-radius:3px;padding:1px 5px;font-style:italic}.odd-list{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 18px}.odd{padding:6px 10px;border-radius:3px;background:#eaf2fa;color:#004c99;font-size:14px;font-weight:700}.odd small{font-weight:400}.badge{display:inline-block;padding:2px 7px;border-radius:3px;background:#d4edda;color:#1f5930;font-size:12px;font-weight:700}.footer{padding:6px 0 24px;color:#666;text-align:right;font-size:13px}@media(max-width:700px){body{padding:0 8px}.card{padding:18px}.metrics{grid-template-columns:1fr}table{font-size:13px}.schedule{display:block;overflow-x:auto;white-space:normal;min-width:670px}h1{font-size:25px}}
+  </style>
+</head>
+<body>
+  <section class="card intro">
+    <span class="tag blue">Cadrage général</span>
+    <h2>IDENTIFICATION ET CADRAGE GÉNÉRAL</h2>
+    <table class="kv"><tbody>
+      <tr><th>Nom de l’École</th><td>École 89</td></tr>
+      <tr><th>Programme</th><td>Bachelor IA — 1ère année (B1)</td></tr>
+      <tr><th>RNCP</th><td>RNCP 37827 — BC01 : Collecte, structuration et exploitation de la donnée</td></tr>
+      <tr><th>Année</th><td>B1</td></tr><tr><th>Semestre</th><td>Semestre 1</td></tr>
+      <tr><th>Module</th><td>Données et Stockage : du Fichier à la Base de Données</td></tr>
+      <tr><th>Code module</th><td><strong style="color:#0056b3">cs101</strong></td></tr>
+      <tr><th>Bloc de compétences</th><td>BC01 — Collecte, structuration et exploitation de la donnée</td></tr>
+      <tr><th>Langue d’enseignement</th><td>Français</td></tr>
+    </tbody></table>
+  </section>
+
+  <section class="card">
+    <span class="tag green">Volume &amp; crédits</span><h2>SPÉCIFICATIONS DU MODULE</h2>
+    <div class="metrics"><div class="metric"><span>Volume horaire</span><strong>35 h</strong></div><div class="metric"><span>Format</span><strong>10 × 3,5 h</strong></div><div class="metric"><span>ECTS</span><strong><span class="todo">À valider</span></strong></div></div>
+    <table class="kv"><tbody>
+      <tr><th>Modalités</th><td>Fondamentaux, ateliers pratiques, projet en binôme, examen individuel et soutenance.</td></tr>
+      <tr><th>Prérequis</th><td>Aucun prérequis académique formel. Des notions élémentaires de scripting, de boucles, de conditions et d’appel d’API simple sont mobilisées pendant le projet.</td></tr>
+      <tr><th>Travail en autonomie</th><td>Autonomie accompagnée durant les séances projet ; préparation des livrables en binôme entre les points d’étape.</td></tr>
+      <tr><th>Évaluation certificative</th><td><span class="badge">Oui</span> — examen individuel + dossier technique et soutenance de projet.</td></tr>
+    </tbody></table>
+  </section>
+
+  <section class="card">
+    <span class="tag purple">Corps enseignant</span><h2>ÉQUIPE PÉDAGOGIQUE</h2>
+    <p><strong>👑 Course Leader :</strong> Najib Al Awar — Responsable de filière IA</p>
+    <p class="subtle">📧 Coordonnées et profil : <span class="todo">à compléter</span></p>
+    <p><strong>👥 Intervenant(s) associé(s) :</strong> <span class="todo">à compléter selon la répartition pédagogique</span></p>
+  </section>
+
+  <section class="card">
+    <span class="tag orange">Alignement pédagogique</span><h2>OBJECTIF DU PROGRAMME ET DESCRIPTION DU MODULE</h2>
+    <h3>⚪ 1. Objectif du programme</h3>
+    <div class="callout">Développer la capacité à collecter, structurer, stocker, interroger et exploiter des données afin de concevoir des solutions data fiables et adaptées à un besoin professionnel.</div>
+    <h3>⚪ 2. Description du module</h3>
+    <div class="callout">Le module couvre les formats de fichiers plats (CSV, JSON, XML), la modélisation relationnelle et la normalisation, les requêtes SQL, les principales familles NoSQL, les formats binaires et la compression. Il conduit les étudiants à choisir une solution de stockage adaptée, puis à concevoir une chaîne de données complète dans le cadre d’un projet de streaming musical.</div>
+    <div class="project-callout"><strong>Projet intégrateur :</strong> <em>StreamData — Concevoir la chaîne de stockage d’une plateforme de streaming musical</em>. Les étudiants extraient des données musicales, les modélisent et les interrogent en SQL, puis proposent un export NoSQL justifié.</div>
+    <h3>⚪ 3. Contribution aux Objectifs de Développement Durable</h3>
+    <div class="odd-list"><span class="odd">ODD 4 <small>— éducation de qualité</small></span><span class="odd">ODD 9 <small>— innovation et infrastructure</small></span><span class="odd">ODD 12 <small>— numérique et stockage responsables</small></span></div>
+    <p class="subtle">Proposition d’alignement à valider par la direction pédagogique.</p>
+    <h3>🔵 4. Contribution du module aux objectifs du programme</h3>
+    <table><thead><tr><th>Bloc</th><th>Objectifs d’apprentissage</th><th>Importance 0–3</th></tr></thead><tbody><tr><td><strong>BC01</strong></td><td>Collecter, structurer, stocker et exploiter des données dans une chaîne de traitement adaptée à un besoin.</td><td style="text-align:center">3</td></tr></tbody></table>
+  </section>
+
+  <section class="card">
+    <span class="tag blue">Objectifs</span><h2>OBJECTIFS DU MODULE</h2>
+    <table><thead><tr><th style="width:16%">MILO</th><th>À la fin du cours, l’étudiant sera capable de</th></tr></thead><tbody>
+      <tr><th>MILO 1</th><td>Choisir un format de stockage adapté à un besoin donné parmi les fichiers plats, les bases relationnelles et les familles NoSQL.</td></tr>
+      <tr><th>MILO 2</th><td>Modéliser des données en tables relationnelles, avec clés primaires, clés étrangères et normalisation de base.</td></tr>
+      <tr><th>MILO 3</th><td>Écrire des requêtes SQL utilisant filtrage, jointures, regroupements et agrégations.</td></tr>
+      <tr><th>MILO 4</th><td>Distinguer les familles NoSQL et justifier leur pertinence pour un cas d’usage.</td></tr>
+      <tr><th>MILO 5</th><td>Expliquer les formats binaires courants et l’impact de la compression sur le stockage.</td></tr>
+      <tr><th>MILO 6</th><td>Importer et exporter des données entre JSON, une base relationnelle et un stockage NoSQL.</td></tr>
+    </tbody></table>
+  </section>
+
+  <section class="card">
+    <span class="tag blue">Séquençage</span><h2>CONTENUS DES SÉANCES</h2>
+    <table class="schedule"><thead><tr><th>Séance</th><th>Durée</th><th>Bloc</th><th>Mode</th><th>Contenu et ressources</th><th>Évaluation / jalon</th></tr></thead><tbody>
+      <tr class="fundamentals"><td>1</td><td>3,5 h</td><td>Fondamentaux</td><td>Apports + exercices</td><td>Formats CSV, JSON et XML : structure, avantages, limites et choix selon le besoin.</td><td>Exercices format et import/export.</td></tr>
+      <tr class="fundamentals"><td>2</td><td>3,5 h</td><td>Fondamentaux</td><td>Apports + atelier</td><td>Modélisation relationnelle : MCD/MPD, clés primaires et étrangères, normalisation 1FN/2FN/3FN.</td><td>Exercice de modélisation.</td></tr>
+      <tr class="fundamentals"><td>3</td><td>3,5 h</td><td>Fondamentaux</td><td>Atelier SQL</td><td>SQL de base : SELECT, WHERE, JOIN sur une base fournie.</td><td>Requêtes guidées.</td></tr>
+      <tr class="fundamentals"><td>4</td><td>3,5 h</td><td>Fondamentaux</td><td>Apports + atelier</td><td>GROUP BY et agrégations ; panorama NoSQL (document, clé-valeur, colonnes, graphes) ; formats binaires et compression JPG, MP3, MP4.</td><td>Cas comparatif SQL / NoSQL.</td></tr>
+      <tr class="project"><td>5</td><td>3,5 h</td><td>Projet</td><td>Atelier encadré</td><td>Lancement StreamData : binômes, cadrage, choix du sujet et début de modélisation.</td><td>Cadrage du projet.</td></tr>
+      <tr class="project"><td>6</td><td>3,5 h</td><td>Projet</td><td>Atelier guidé</td><td>Atelier de modélisation ; extraction ou génération d’un jeu de données.</td><td><strong>J1 :</strong> schéma relationnel validé + données brutes extraites.</td></tr>
+      <tr class="project"><td>7</td><td>3,5 h</td><td>Projet</td><td>Autonomie accompagnée</td><td>Implémentation SQL, peuplement de la base et premières requêtes.</td><td>Point d’étape avec l’intervenant.</td></tr>
+      <tr class="project"><td>8</td><td>3,5 h</td><td>Projet</td><td>Autonomie + revue</td><td>Requêtes SQL, export et comparaison NoSQL ; revue de code/requêtes entre binômes.</td><td><strong>J2 :</strong> base peuplée + premières requêtes fonctionnelles.</td></tr>
+      <tr class="assessment"><td>9</td><td>3,5 h</td><td>Évaluation</td><td>Individuel</td><td>Écrit et/ou pratique SQL : modélisation, requêtes et questions NoSQL.</td><td><strong>Examen individuel.</strong></td></tr>
+      <tr class="assessment"><td>10</td><td>3,5 h</td><td>Évaluation</td><td>Soutenance</td><td>Présentation par binôme, démonstration technique et questions individuelles.</td><td><strong>J3 :</strong> livrables finalisés + soutenance.</td></tr>
+    </tbody></table>
+    <p><strong>Ressources :</strong> supports du module, jeux de données d’API iTunes Search ou Deezer, SQLite ou PostgreSQL, dbdiagram.io, documentation MongoDB, Git.</p>
+  </section>
+
+  <section class="card">
+    <span class="tag green">Évaluation</span><h2>ÉVALUATIONS</h2>
+    <table><thead><tr><th>Type et méthode</th><th>Modalité</th><th>Pondération</th><th>MILO évalués</th></tr></thead><tbody>
+      <tr><td>Examen individuel — séance 9</td><td>Écrit et/ou pratique : modélisation, SQL et NoSQL.</td><td><span class="todo">À valider</span></td><td>MILO 1 à 5</td></tr>
+      <tr><td>Projet StreamData — dossier technique et soutenance</td><td>Travail en binôme ; une part individuelle est vérifiée par les questions de soutenance.</td><td><span class="todo">À valider</span></td><td>MILO 2 à 6</td></tr>
+    </tbody></table>
+    <div class="note"><strong>Critères :</strong> pertinence du schéma relationnel, qualité des requêtes SQL, pertinence du choix NoSQL, documentation technique et clarté de la démonstration orale. Les pondérations doivent être confirmées avant publication.</div>
+  </section>
+  <p class="footer">Version consolidée le 20/08/2026 · Sources : découpage du module et brief projet StreamData.</p>
+
+
+</body></html>

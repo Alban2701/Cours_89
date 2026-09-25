@@ -102,15 +102,23 @@ def add(*args: str) -> str:
 
 def sub(*args: str) -> str:
     first = True
-    for arg in args:
-        arg = convert_to_micrometer(arg)
+    total = 0
+    if len(args) == 0:
+        return "0"
 
-        if first:
-            total = get_numeric_part(arg)
-            first = False
+    elif len(args) == 1:
+        return args[0]
 
-        else:
-            total -= get_numeric_part(arg)
+    else:
+        for arg in args:
+            arg = convert_to_micrometer(arg)
+
+            if first:
+                total = get_numeric_part(arg)
+                first = False
+
+            else:
+                total -= get_numeric_part(arg)
 
     return get_best_unit(total)
 
